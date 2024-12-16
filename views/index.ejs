@@ -3,10 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My HTML Page</title>
+    <title>Parts & Accessories</title>
+    <link rel="stylesheet" href="../stylesheets/styles.css"> <!-- Link to your stylesheet -->
 </head>
 <body>
-    <h1>Welcome to Yamaha Shop</h1>
-    <p>This is a plain HTML page.</p>
+
+    <!-- Include Navbar -->
+    <%- include('partials/navbar') %>
+
+    <div class="container">
+        <div class="offer">
+            <h1>Special Offer</h1>
+            <div class="shock-sale">
+                <h2>SHOCK SALE</h2>
+                <p>Up to 40% OFF</p>
+            </div>
+            <p class="offer-period">Starting from 10th Oct to 30th Dec 2024</p>
+        </div>
+    </div>
+
+    <!-- Product Section -->
+    <section class="product-section">
+        <h2>Parts & Accessories</h2>
+        <div class="product-grid">
+            <!-- Hard-coded products -->
+            <div class="product-card">
+                <img src="/images/product1.jpg" alt="Product 1">
+                <div class="product-info">
+                    <h3>Product 1</h3>
+                    <p>Description of Product 1</p>
+                    <a href="/product/1" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/images/product2.jpg" alt="Product 2">
+                <div class="product-info">
+                    <h3>Product 2</h3>
+                    <p>Description of Product 2</p>
+                    <a href="/product/2" class="btn">View Details</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/images/product3.jpg" alt="Product 3">
+                <div class="product-info">
+                    <h3>Product 3</h3>
+                    <p>Description of Product 3</p>
+                    <a href="/product/3" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>

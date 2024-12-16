@@ -1,0 +1,239 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.offer {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.shock-sale {
+  background-color: #333;
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.t-shirt-images img {
+  width: 150px;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+.t-shirt-images img:hover {
+  transform: scale(1.1);
+}
+
+.offer-period {
+  font-size: 16px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
+/* Navbar Styling */
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav .logo a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+nav .search-bar input {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  max-width: 200px; /* Limit the search bar width */
+  transition: border-color 0.3s ease;
+}
+
+nav .search-bar input:focus {
+  border: 2px solid #007bff;
+}
+
+@media (max-width: 768px) {
+  nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul {
+      flex-direction: column;
+      margin-top: 15px;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  nav .search-bar input {
+      width: 100%;
+      margin-top: 10px;
+  }
+}
+
+/* Offer Title */
+.offer h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Shock Sale Style */
+.shock-sale {
+  background-color: #ff4d4d;
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+/* Offer Period Text */
+.offer-period {
+  font-size: 18px;
+  color: #666;
+}
+
+/* T-Shirt Image Grid */
+.t-shirt-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.t-shirt-images img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.t-shirt-images img:hover {
+  transform: scale(1.1);
+}
+
+/* Product Section */
+.product-section {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.product-section h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 15px;
+}
+
+.product-info h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.product-info .btn {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.product-info .btn:hover {
+  background-color: #e03e3e;
+}
+
+
+
+
