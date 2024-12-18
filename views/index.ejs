@@ -11,20 +11,15 @@
     <!-- Include Navbar -->
     <%- include('partials/navbar') %>
 
-    <div class="container">
-        <div class="offer">
-            <h1>Special Offer</h1>
-            <div class="shock-sale">
-                <h2>SHOCK SALE</h2>
-                <p>Up to 40% OFF</p>
-            </div>
-            <p class="offer-period">Starting from 10th Oct to 30th Dec 2024</p>
-        </div>
-    </div>
+    <%- include('Slideshow/slideshow') %>
+
 
     <!-- Product Section -->
     <section class="product-section">
-        <h2>Parts & Accessories</h2>
+        <div class="parts">
+            <h2>Parts & Accessories</h2> 
+            <a href="#" class="btn" >ดูทั้งหมด</a>
+        </div>
         <div class="product-grid">
             <!-- Hard-coded products -->
             <div class="product-card">
