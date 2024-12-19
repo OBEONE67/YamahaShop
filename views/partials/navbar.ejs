@@ -1,164 +1,5 @@
-<style>
-    @font-face {
-    font-family: 'prompt-medium';  /* Define the font's name */
-    src: url('/fonts/prompt-medium.woff2') format('woff2');  /* URL to the font file */
-    font-weight: normal;
-    font-style: normal;
-}
-* {
-    font-family: 'prompt-medium';
-}
-    /* General Mega Menu Styles */
-    .mega-menu {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #ffffff;
-        color: #fff;
-        padding: 10px 20px;
-        flex-wrap: wrap;
-    }
 
-    .mega-menu .logo img {
-        height: 50px;
-    }
-
-    .nav-list {
-        list-style: none;
-        display: flex;
-        gap: 20px;
-        margin: 0;
-        padding: 0;
-        flex-wrap: wrap;
-    }
-
-    .nav-list li {
-        position: relative;
-    }
-
-    .nav-list a {
-        text-decoration: none;
-        color: black;
-        padding: 10px 15px;
-        display: inline-block;
-    }
-
-    .nav-list a:hover {
-        background-color: #ff6060;
-        border-radius: 5px;
-    }
-
-    /* Dropdown Menu */
-    .dropdown {
-        position: relative;
-    }
-
-    .dropdown .dropbtn {
-        background-color: inherit;
-        color: rgb(0, 0, 0);
-        font-size: 18px;
-        border: none;
-        padding: 10px 15px;
-        cursor: pointer;
-    }
-
-    .dropdown:hover .dropbtn {
-        background-color: #ff6060;
-        border-radius: 5px;
-    }
-
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        color: #333;
-        top: 100%;
-        left: 0;
-        width: 600px;
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-        padding: 20px;
-        z-index: 1;
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-
-    .dropdown-content .header {
-        background: #444;
-        color: white;
-        padding: 10px;
-        text-align: center;
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-
-    .dropdown-content .row {
-        display: flex;
-        gap: 20px;
-    }
-
-    .dropdown-content .column {
-        flex: 1;
-        padding: 10px;
-    }
-
-    .dropdown-content .column h3 {
-        margin-bottom: 10px;
-        color: #444;
-    }
-
-    .dropdown-content .column a {
-        color: #333;
-        text-decoration: none;
-        padding: 5px 0;
-        display: block;
-    }
-
-    .dropdown-content .column a:hover {
-        background-color: #ddd;
-        border-radius: 3px;
-        padding-left: 5px;
-    }
-
-    /* Search Bar */
-    .search-bar {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .search-bar img {
-        width: 20px;
-        height: 20px;
-    }
-
-    .search-bar span {
-        color: white;
-        font-size: 14px;
-    }
-
-    /* Responsive Styles */
-    @media screen and (max-width: 768px) {
-        .mega-menu {
-            flex-wrap: wrap;
-        }
-
-        .nav-list {
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .dropdown-content {
-            width: 100%;
-        }
-
-        .dropdown-content .row {
-            flex-direction: column;
-            gap: 10px;
-        }
-    }
-</style>
+<link rel="stylesheet" href="/stylesheets/navbar.css">
 
 <nav class="mega-menu">
     <div class="logo">
@@ -167,37 +8,110 @@
         </a>
     </div>
     <ul class="nav-list">
-        <li><a href="#">หน้าหลัก</a></li>
-        <li class="dropdown">
-            <button class="dropbtn">ผลิตภัณฑ์</button>
+        <!-- หน้าหลัก -->
+        <li>
+            <a href="#">หน้าหลัก</a>
             <div class="dropdown-content">
-                <div class="header">Mega Menu</div>
+                <div class="header">เกี่ยวกับเรา</div>
                 <div class="row">
                     <div class="column">
-                        <h3>Category 1</h3>
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                        <h3>ยินดีต้อนรับ</h3>
+                        <a href="#">หน้าแรกเว็บไซต์</a>
+                        <a href="#">ข้อมูลสำคัญ</a>
                     </div>
                     <div class="column">
-                        <h3>Category 2</h3>
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
-                    <div class="column">
-                        <h3>Category 3</h3>
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                        <h3>ประวัติ</h3>
+                        <a href="#">เรื่องราวของเรา</a>
+                        <a href="#">เป้าหมายองค์กร</a>
                     </div>
                 </div>
             </div>
         </li>
-        <li><a href="#">ออนไลน์ช้อป</a></li>
-        <li><a href="#">บิ๊กไบค์</a></li>
-        <li><a href="#">ศูนย์บริการ</a></li>
-        <li><a href="#">เกี่ยวกับยามาฮ่า</a></li>
+
+        <!-- ผลิตภัณฑ์ -->
+        <li>
+            <a href="#">ผลิตภัณฑ์</a>
+            <div class="dropdown-content">
+                <div class="header">สินค้าและบริการ</div>
+                <div class="row">
+                    <div class="column">
+                        <h3>มอเตอร์ไซค์</h3>
+                        <a href="#">รุ่นยอดนิยม</a>
+                        <a href="#">รถครอบครัว</a>
+                        <a href="#">รถออโตเมติก</a>
+                    </div>
+                    <div class="column">
+                        <h3>อะไหล่และอุปกรณ์</h3>
+                        <a href="#">อะไหล่แท้</a>
+                        <a href="#">อุปกรณ์แต่งรถ</a>
+                        <a href="#">การรับประกัน</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        <!-- ออนไลน์ช้อป -->
+        <li>
+            <a href="#">ออนไลน์ช้อป</a>
+            <div class="dropdown-content">
+                <div class="header">ร้านค้าออนไลน์</div>
+                <div class="row">
+                    <div class="column">
+                        <h3>หมวดหมู่สินค้า</h3>
+                        <a href="#">เครื่องแต่งกาย</a>
+                        <a href="#">อุปกรณ์เสริม</a>
+                        <a href="#">ของที่ระลึก</a>
+                    </div>
+                    <div class="column">
+                        <h3>โปรโมชั่นพิเศษ</h3>
+                        <a href="#">ส่วนลดสูงสุด</a>
+                        <a href="#">แพ็คเกจของขวัญ</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        <!-- บิ๊กไบค์ -->
+        <li>
+            <a href="#">บิ๊กไบค์</a>
+            <div class="dropdown-content">
+                <div class="header">Big Bike</div>
+                <div class="row">
+                    <div class="column">
+                        <h3>รุ่นแนะนำ</h3>
+                        <a href="#">MT Series</a>
+                        <a href="#">R Series</a>
+                        <a href="#">Tracer</a>
+                    </div>
+                    <div class="column">
+                        <h3>กิจกรรม</h3>
+                        <a href="#">ทริปพิเศษ</a>
+                        <a href="#">งานแสดงสินค้า</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        <!-- ศูนย์บริการ -->
+        <li>
+            <a href="#">ศูนย์บริการ</a>
+            <div class="dropdown-content">
+                <div class="header">บริการ</div>
+                <div class="row">
+                    <div class="column">
+                        <h3>บริการของเรา</h3>
+                        <a href="#">ซ่อมบำรุง</a>
+                        <a href="#">ตรวจเช็คสภาพ</a>
+                        <a href="#">การรับประกัน</a>
+                    </div>
+                    <div class="column">
+                        <h3>ค้นหาศูนย์บริการ</h3>
+                        <a href="#">ใกล้บ้านคุณ</a>
+                        <a href="#">ค้นหาด้วยแผนที่</a>
+                    </div>
+                </div>
+            </div>
+        </li>
     </ul>
     <div class="search-bar">
         <a href="#"><img src="images/search-icon.png" alt="Search"></a>
