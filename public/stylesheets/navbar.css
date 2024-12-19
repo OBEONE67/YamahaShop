@@ -21,7 +21,7 @@
     color: #333;
     padding: 10px 20px;
     flex-wrap: wrap;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 6px solid red;
 }
 
 .mega-menu .logo img {
@@ -42,6 +42,7 @@
 }
 
 .nav-list a {
+    font-size: 18px;
     text-decoration: none;
     color: black;
     padding: 10px 15px;
@@ -168,3 +169,85 @@
         transform: translateY(0);
     }
 }
+
+.down-menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #000;
+    color: #333;
+    padding: 15px 15px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.down-li {
+    display: flex;
+    list-style: none; 
+    padding: 10px; 
+    margin: 0; 
+    border-radius: 8px; 
+    justify-content: space-around; 
+}
+
+.down-li li {
+    padding: 10px 15px; 
+    border-radius: 4px; 
+    transition: background-color 0.3s; 
+}
+
+.down-li a {
+    text-decoration: none; 
+    font-size: 16px; 
+    color: white; 
+    display: inline-block; 
+}
+
+.down-li li:hover {
+    background-color: #555; 
+}
+
+
+.search-cart {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-cart a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 5px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.search-cart a:hover {
+    background-color: #555; /* Change background color on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.search-cart img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s; /* Add smooth transition to image */
+}
+
+.search-cart a:hover img {
+    transform: rotate(10deg); /* Slight rotation on hover for image */
+}
+
+.search-cart img {
+    width: 40px;
+    height: 40px;
+}
+
+.search-cart span {
+    color: #fff; 
+    font-size: 16px; 
+}
+
+
