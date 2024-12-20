@@ -119,6 +119,14 @@
     padding-left: 5px;
 }
 
+/* General horizontal layout class */
+.horizontal-layout {
+    display: flex; /* Arrange items in a row */
+    align-items: center; /* Align items vertically in the center */
+    gap: 20px; /* Space between children */
+    justify-content: center; /* Center the items horizontally */
+}
+
 /* Search Bar */
 .search-bar {
     display: flex;
@@ -129,12 +137,68 @@
 .search-bar img {
     width: 20px;
     height: 20px;
+    transition: transform 0.3s; /* Smooth hover animation */
+}
+
+.search-bar a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
 }
 
 .search-bar span {
     color: black;
     font-size: 14px;
+    transition: color 0.3s;
 }
+
+/* Hover Effect for Search Bar */
+.search-bar:hover img {
+    transform: rotate(15deg) scale(1.2); /* Rotate and enlarge icon */
+}
+
+.search-bar:hover span {
+    color: #28a745; /* Green color for search */
+}
+
+/* Login Bar */
+.login-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-bar img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s;
+}
+
+.login-bar a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
+}
+
+.login-bar span {
+    color: black;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+/* Hover Effect for Login Bar */
+.login-bar:hover img {
+    transform: scale(1.5); /* Enlarge icon only for login */
+}
+
+.login-bar:hover span {
+    color: #dc3545; /* Red color for login */
+}
+
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
