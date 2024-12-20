@@ -1,3 +1,108 @@
+@font-face {
+    font-family: 'prompt-medium';
+    src: url('/fonts/prompt-medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'prompt-medium';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* General Mega Menu Styles */
+.mega-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    color: #333;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    border-bottom: 6px solid red;
+}
+
+.mega-menu .logo img {
+    height: 50px;
+}
+
+/* คอนเทนเนอร์รูปภาพ */
+.show_img {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* ป้องกันภาพขยายออกนอกกรอบ */
+}
+
+/* รูปภาพ */
+.show_img img {
+    display: block;
+    width: 100%;
+    /* รักษาอัตราส่วน */
+    transition: transform 0.3s ease;
+    /* เพิ่มเอฟเฟกต์การขยาย */
+}
+
+/* เมื่อเมาส์อยู่เหนือรูปภาพ */
+.show_img img.expandable:hover {
+    transform: scale(1.2);
+    /* ขยายภาพ 1.2 เท่า */
+}
+
+/* คอนเทนเนอร์ข้อความ */
+.text_overlay {
+    position: absolute;
+    /* ทำให้ข้อความอยู่ทับบนรูปภาพ */
+    top: 50%;
+    /* จัดข้อความให้อยู่กลางแนวตั้ง */
+    left: 50%;
+    /* จัดข้อความให้อยู่กลางแนวนอน */
+    transform: translate(-50%, -50%);
+    /* จัดข้อความให้อยู่ตรงกลางพอดี */
+    text-align: center;
+    /* จัดข้อความให้อยู่กึ่งกลาง */
+    /* เพิ่มพื้นหลังโปร่งใส */
+    color: white;
+    /* สีข้อความ */
+    padding: 10px;
+    /* เพิ่มระยะขอบรอบข้อความ */
+    border-radius: 5px;
+    /* ทำมุมให้โค้งมน */
+}
+
+/* สไตล์บรรทัดแรก */
+.text_overlay .line1 {
+    display: block;
+    /* แยกข้อความออกเป็นบรรทัด */
+    font-size: 70px;
+    /* ขนาดตัวอักษร */
+    font-weight: bold;
+    /* ตัวอักษรหนา */
+}
+
+/* สไตล์บรรทัดที่สอง */
+.text_overlay .line2 {
+    display: block;
+    /* แยกข้อความออกเป็นบรรทัด */
+    font-size: 25px;
+    /* ขนาดตัวอักษร */
+    font-weight: normal;
+    /* ตัวอักษรปกติ */
+}
+
+.Box {
+    content: '';
+    border-bottom: 6px solid red;
+    padding: 3px;
+    width: 85px;
+    height: 6px;
+    margin: 0 auto;
+}
+
+
 .flex-container {
     display: flex;
     /* ใช้ Flexbox เพื่อจัดเรียงกรอบในแถว */
