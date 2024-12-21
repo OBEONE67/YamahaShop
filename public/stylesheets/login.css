@@ -1,74 +1,75 @@
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f2f2f2;
-  }
-  
-  .login-box {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 500px;
-    height: 500px;
-    text-align: center;
-  }
-  
-  .login-logo {
-    width: 200px;  /* เพิ่มขนาดรูปภาพ */
-    height: 150px; /* กำหนดความสูงให้เหมาะสม */
-    object-fit: contain; /* ทำให้ภาพไม่ยืดหรือบิดเบี้ยว */
-    margin-bottom: 5px;
-  }
-  
-  .textbox {
-    margin-bottom: 5px;
-  }
-  
-  .textbox input {
-    width: 80%;
-    height: 30px;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  button {
-    width: 60%;
-    height: 50px;
-    padding: 10px;
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 25px
-  }
-  
-  button:hover {
-    background-color: #ee6161;
-  }
-  
-  .signup-link {
-    margin-top: 15px;
-  }
-  
-  .signup-link a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .signup-link a:hover {
-    text-decoration: underline;
-  }
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f2f2f2;
+}
 
-  
-  
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* ให้ครอบคลุมทั้งหน้าจอ */
+  padding: 20px; /* เพิ่มระยะห่างบนและล่าง */
+  box-sizing: border-box; /* ให้ padding ไม่เพิ่มขนาดของกล่อง */
+}
+
+.login-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  text-align: center;
+}
+
+
+.login-logo {
+  width: 200px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.textbox {
+  margin-bottom: 15px;
+}
+
+.textbox input, 
+.textbox select {
+  width: 80%;
+  height: 40px;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  width: 60%;
+  height: 50px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+button:hover {
+  background-color: #ee6161;
+}
+
+.signup-link {
+  margin-top: 15px;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}

@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheets/login.css">
-    <title>Login</title>
+    <title>Signup</title>
 </head>
 <body>
-  <body>
     <div class="login-container">
         <div class="login-box">
             <img src="images/65th_logo_yamaha.webp" alt="Logo" class="login-logo">
-            <form>
+            <form action="/register" method="POST">
                 <div class="textbox">
                     <input type="text" placeholder="Username" name="username" required>
                 </div>
@@ -19,13 +18,35 @@
                     <input type="password" placeholder="Password" name="password" required>
                 </div>
                 <div class="textbox">
-                  <input type="password" placeholder="Email" name="Email" required>
-              </div>
+                    <input type="text" placeholder="Account Name" name="accountname" required>
+                </div>
+                <div class="textbox">
+                    <input type="text" placeholder="Phone" name="phone" required>
+                </div>
+                <div class="textbox">
+                    <input type="text" placeholder="Province" name="province" required>
+                </div>
+                <div class="textbox">
+                    <input type="text" placeholder="District" name="district" required>
+                </div>
+                <div class="textbox">
+                    <input type="text" placeholder="Subdistrict" name="subdistrict" required>
+                </div>
+                <div class="textbox">
+                    <input type="text" placeholder="Postal Code" name="postalcode" required>
+                </div>
+                <div class="textbox">
+                    <select name="accounttype" required>
+                        <option value="" disabled selected>Account Type</option>
+                        <option value="personal">Personal</option>
+                        <option value="business">Business</option>
+                    </select>
+                </div>
                 <button type="submit">Signup</button>
             </form>
             <div class="signup-link">
-              <p>Already have an account <a href="signup.ejs"> Signup</a></p>
-          </div>
+                <p>Already have an account? <a href="/login">Login</a></p>
+            </div>
         </div>
     </div>
 </body>
