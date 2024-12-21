@@ -1,14 +1,15 @@
 var express = require('express');
 var router = express.Router();
-const axios = require('axios');
-
-// API URL
-const apiUrl = 'http://localhost:8080/api/auth/register';
 
 // GET: Render Signup Page
 router.get('/', function (req, res, next) {
   res.render('signup', { title: 'Signup' });
 });
+
+const axios = require('axios');
+
+// API URL
+const apiUrl = 'http://localhost:8080/api/auth/register';
 
 // POST: Handle User Registration
 router.post('/register', (req, res) => {
